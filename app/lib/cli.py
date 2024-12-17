@@ -1,7 +1,8 @@
 from flask import Flask  
 from lib.db.models import db, Task  
 from datetime import datetime  
-import click  
+import click
+
 
 app = Flask(__name__)  
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tasks.db'  
